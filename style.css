@@ -225,6 +225,9 @@ section {
     .main-content h3 {
         font-size: 1.4em;
     }
+    .social-icons a{
+        padding-right:10px;
+    }
      .footer .social-icons a {
         padding-right: 4px;
          font-size:0.8em;
