@@ -193,7 +193,7 @@ section {
     }
     .navigation a{
         font-size: 1em
-        padding:2px;
+        padding-left: 2px;
     }
     .title { 
         font-size: 1.8em;
