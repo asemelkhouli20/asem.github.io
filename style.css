@@ -219,15 +219,24 @@ section {
     .main-content h2{
         font-size: 0.8em;
     }
+    .navigation a{
+        font-size: 1em
+         padding-left: 5px;
+    }
     .main-content h3 {
         font-size: 1.4em;
     }
     .footer .social-icons a {
         padding-right: 4px;
     }
+    
 }
 @media(max-width:320px){
     body{
         font-size: 8px;
+    }
+    .navigation a{
+        font-size: 1em
+         padding-left: 5px;
     }
 }
