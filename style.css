@@ -219,10 +219,9 @@ section {
     .main-content h2{
         font-size: 0.8em;
     }
-    .navigation a{
-        font-size: 1em
-         padding-left: 5px;
-    }
+   .navgation a {
+    padding-left: 5px;
+}
     .main-content h3 {
         font-size: 1.4em;
     }
@@ -235,8 +234,5 @@ section {
     body{
         font-size: 8px;
     }
-    .navigation a{
-        font-size: 1em
-         padding-left: 5px;
-    }
+    
 }
