@@ -214,7 +214,7 @@ section {
 }
 @media(max-width:641px){
     body{
-        font-size: 10px;
+        font-size: 12px;
     }
     .main-content h2{
         font-size: 0.8em;
@@ -225,7 +225,7 @@ section {
     .main-content h3 {
         font-size: 1.4em;
     }
-     .social-icons a {
+     .footer .social-icons a {
         padding-right: 4px;
     }
     
