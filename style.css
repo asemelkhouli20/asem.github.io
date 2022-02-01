@@ -228,9 +228,12 @@ section {
     .social-icons a{
         padding-right:10px;
     }
+     .footer{
+         font-size:1em;
+    }
      .footer .social-icons a {
         padding-right: 4px;
-         font-size:0.8em;
+         
     }
     
 }
