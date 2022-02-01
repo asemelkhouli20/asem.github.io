@@ -192,7 +192,8 @@ section {
         padding: 10px 20px;
     }
     .navigation a{
-        padding: 5px;
+        font-size: 0.8em
+        padding: 2px;
     }
     .title { 
         font-size: 1.8em;
@@ -213,7 +214,7 @@ section {
 }
 @media(max-width:641px){
     body{
-        font-size: 12px;
+        font-size: 10px;
     }
     .main-content h2{
         font-size: 0.8em;
