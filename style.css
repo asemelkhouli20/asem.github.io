@@ -89,7 +89,7 @@ section {
 .social-icons a {
     color: #fff;
     font-size: 1.7em;
-    padding-left: 30px;
+    padding-right: 30px;
     
 }
 .title {
@@ -227,13 +227,14 @@ section {
     }
     .social-icons a{
         padding-left:10px;
+        paddin-right:0px;
     }
      .footer{
          font-size:1em;
     }
      .footer .social-icons a {
         padding-left: 4px;
-         
+          paddin-right:0px;
     }
     
 }
