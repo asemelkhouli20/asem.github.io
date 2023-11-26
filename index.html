@@ -1,188 +1,1026 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Asem ELKHOULI</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asem Elkhouli</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <a class="logo" href="#">Asem</a>
-        <nav class="navigation">
-            <a href="#about">About me</a>
-            <a href="#PORTFOLIO">PORTFOLIO</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-    </header>
-    <section class="main"> 
-    <div>
-        <h2>Hello I'm Asem ELKHOULI👋<br><span>iOS Developer</span></h2>
-        <h3>“It’s only crazy until you do it”</h3>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" style="border-radius: 80px;"">
+          <img src=" ./assets/images/my-avatar.png" alt="Asem Elkhouli" width="80"
+          style="border-radius: 80px;margin: 5px;border: 1px solid goldenrod;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Asem Elkhouli">Asem Elkhouli</h1>
+
+          <p class="title">iOS developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:asemelkhouli209@gmail.com" class="contact-link">asemelkhouli209@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+201069934104" class="contact-link">+20 106 99 34 104</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-01-01">1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Egypt, Cairo, El Basatin</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/asemelkhouli20" class="social-link" target="blank">
+              <ion-icon name="logo-Github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/asem-elkhouli" class="social-link" target="blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://api.whatsapp.com/send/?phone=%2B201069934104&text&app_absent=0" class="social-link"
+              target="blank">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+
+
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm <strong style="color:goldenrod;">iOS developer</strong> and <strong style="color:darkorange;">UI/UX
+              Designer</strong> from Cairo, Egypt, working in iOS development.
+            <br>
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+          <hr><br>
+          <p>
+            My job is to build your iOS App so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way.
+          </p>
+          <p>
+            so I wish to work together and build something great.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                  <br>
+                  with modern tools Sketch and Figma.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">iOS apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS platform.
+                  <br>
+                  with Swift, UIKit and swiftUI
+                </p>
+              </div>
+
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Recent Work</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/hrapp.png" alt="HR App" width="60" data-testimonials-avatar
+                    class="app-icon">
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>HR App</h4>
+                <h6 hidden="true" data-testimonials-subtitle>Soul developer - swiftUI</h6>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    An administrative application that helps human resources employees to track all employees of the
+                    organization by
+                    recording arrival and departure times and determining their location using GPS.
+                    <br>
+                    Managing leave requests and displaying reports on employee performance.
+                    <br>
+                    The latest news, decisions of the institution's Board of Directors, and organizing visits, events,
+                    and meetings
+                    <a href="https://schemecode.com" target="blank"><strong style="color:goldenrod;">Build in Scheme
+                        Code</strong></a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/mowater.png" alt="Mowater" width="60" class="app-icon"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mowater</h4>
+                <h6 hidden="true" data-testimonials-subtitle>Soul developer - UIKit</h6>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    An application through which you can sell your vehicle, buy a new vehicle, or purchase a number
+                    plate for your new
+                    vehicle.
+                    <br>
+                    You can even clear government transactions and insure them all in one place with the click of a
+                    button.
+                    In the event that your vehicle breaks down, you can call and book an appointment to repair your
+                    vehicle, or call Winch
+                    to rescue you on the road.
+                    <br>
+                    If you do not have time, you can book an appointment to take your children to university or school,
+                    or even to take your
+                    workers to the workplace.
+                    <br>
+                    Also, if you are not good at driving, you can book driving lessons and you can even rent a vehicle.
+                    <a href="https://schemecode.com" target="blank"><strong style="color:goldenrod;">Build in Scheme
+                        Code</strong></a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Ayen.png" alt="Ayen" width="60" data-testimonials-avatar class="app-icon">
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ayen</h4>
+                <h6 hidden="true" data-testimonials-subtitle>Soul developer - swiftUI - UI/UX, the logo</h6>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    A real estate application that allows you to find properties surrounding you.
+                    <br>
+                    It also allows you to list your properties for sale in addition to your services such as restaurants
+                    and hospitals,
+                    <br>
+                    which allows you to see the entire place using virtual reality glasses or in 3D through your phone.
+
+                    <a href="https://schemecode.com" target="blank"><strong style="color:goldenrod;">Build in Scheme
+                        Code</strong></a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img class="app-icon">
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14" data-modal-subtitle>15 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Utilities</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <img src="./assets/images/Xcode.png" alt="client logo">
+            </li>
+            <li class="clients-item">
+              <img src="./assets/images/simulater.png" alt="client logo">
+            </li>
+            <li class="clients-item">
+              <img src="./assets/images/VCode.png" alt="client logo">
+            </li>
+            <li class="clients-item">
+              <img src="./assets/images/postman.png" alt="client logo">
+            </li>
+            <li class="clients-item">
+              <img src="./assets/images/figma.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/sketch.png" alt="client logo">
+            </li>
+
+
+
+
+
+            <li class="clients-item">
+              <img src="./assets/images/AdobeXD.png" alt="client logo">
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>iOS Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>UI/UX Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Logo design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>iOS Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>UI/UX Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Logo design</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="iOS Applications">
+              <a href="https://www.youtube.com/watch?v=cMvudi7xXVk&ab_channel=CodeWithAsem" target="blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/MowaterApp.png" alt="Mowater" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mowater</h3>
+
+                <p class="project-category">iOS Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Logo design">
+              <a href="https://www.behance.net/gallery/185352473/Amazing-Egypt" target="blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/amazingEgypt.png" alt="Amazing Egypt" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Amazing Egypt</h3>
+
+                <p class="project-category">Logo Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Logo design">
+              <a href="https://www.behance.net/gallery/185353677/Diar-AlSafa" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DiarAlSafa.png" alt="Diar AlSafa" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Diar AlSafa</h3>
+
+                <p class="project-category">Logo design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Logo design">
+              <a href="https://www.behance.net/gallery/185354137/Invest-Peak-Estate" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/InvestPeakEstate.png" alt="Invest Peak Estate" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Invest Peak Estate</h3>
+
+                <p class="project-category">Logo design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="iOS Applications">
+              <a href="https://www.youtube.com/watch?v=2EJhNsSvfAE&ab_channel=CodeWithAsem" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/HRAppDetails.png" alt="HR App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HR App</h3>
+
+                <p class="project-category">iOS Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="iOS Applications">
+              <a href="https://www.youtube.com/watch?v=WkCl4IIwfeg&ab_channel=CodeWithAsem" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/AyenDetails.png" alt="Ayen" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ayen</h3>
+
+                <p class="project-category">iOS Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="iOS Applications">
+              <a href="https://www.youtube.com/watch?v=MeArsQlocdM&ab_channel=CodeWithAsem" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/TabarkDetails.png" alt="Tabark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tabark</h3>
+
+                <p class="project-category">iOS Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="iOS Applications">
+              <a href="https://www.youtube.com/watch?v=V-aV_CiY4mg&ab_channel=CodeWithAsem" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ArabDeveloper.png" alt="Arab Developer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arab Developer</h3>
+
+                <p class="project-category">iOS Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="UI/UX design">
+              <a href="https://www.behance.net/gallery/185362831/Lolo" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Lolol.png" alt="Lolo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lolo</h3>
+
+                <p class="project-category">UI/UX design</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
         
-        <a href="#Contact" class="main-btn">Let’s Build something great 💪</a>
-        <br>
-        <div class="social-icons">
-            <a target="blank"href="https://www.linkedin.com/in/asem-elkhouli/"><i class="fab fa-linkedin"></i></a>
-            <a target="blank"href="https://github.com/asemelkhouli20"><i class="fab fa-github"></i></a>
-            <a target="blank"href="https://api.whatsapp.com/send/?phone=%2B201013171708&text&app_absent=0"><i class="fab fa-whatsapp"></i></a>
-            <a href="#Contact"><i class="far fa-id-card"></i></a>
-        </div>
-    
+
+      </article>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mansoura University</h4>
+
+              <span>2017 — 2021</span>
+
+              <p class="timeline-text">
+                Bachelor's degree (B.Sc.) in Computer science <br>
+                The Faculty Computer and Information Science
+              </p>
+
+            </li>
+
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school in Kingdom of Saudi Arabia</h4>
+
+              <span>2014 — 2017</span>
+
+              <p class="timeline-text">
+                The Eastern Region,Dammam
+                <br>
+                High School: Dammam secondary school - Excellent 99.22% - 2017
+                <br>
+                National Center for Assessment - total: 98
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Scheme Code</h4>
+              <span>July 2022 — Dec 2023</span>
+
+              <p class="timeline-text">
+                • Designing and developing IOS application according to specific requirements.
+                <br>
+                • Writing clean and efficient codes for iOS applications
+                <br>
+                • Monitoring the performance of live apps and work on optimizing them at the code level
+                <br>
+                • Identifying and resolving bottlenecks, rectifying bugs and enhancing application performance
+                <br>
+                • Integrate with external APIs and third-party libraries to enhance apps functionality.
+                <br>
+                • Implement a system for sending appointment reminders and promotional notifications with Firebase cloud
+                messaging.
+                <br>
+                • Distribute app/updates To App-store
+                <br>
+                <br>
+                • Performing unit and instrumentation tests on code
+                <br>
+                • Execute Code Review on fellow engineer's work.
+                <br>
+                • Help maintain code, organization, and automatization.
+                <br>
+                • Work on bug fixing and ensure the performance, quality, and responsiveness of the app.
+                <br>
+                • Mentor other engineers on best practices and provide technical guidance during implementation
+                <br>
+                • Write and test code, refining and rewriting it as necessary, and communicate with any engineer
+                involved in the project
+                <br>
+                <br>
+                • Collaborating with cross-functional teams to define and design new features
+                <br>
+                • Research, and design architecture of new software projects or new features in active projects
+                according to business
+                requirements
+                <br>
+                <br>
+                • Implement complex designs into reliable, reusable, and readable code.
+                <br>
+                • Apply the Agile practices effectively on while working on the various phases of software development.
+                <br>
+                • Collaborate with the team to design new features.
+                <br>
+                • Staying up to date with new mobile technology trends, applications, and protocols
+                <br>
+                • Gathering and evaluating user requirements, in collaboration with product managers and engineers.
+                <br>
+                • Providing high quality design for mobile applications, UI/UX design
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelancer work</h4>
+
+              <span>2020 — present</span>
+
+              <p class="timeline-text">
+                iOS Developer - UI/UX Design - Convert design UI into SwitUI Code
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card" style="line-height: 45px;">
+
+            <li class="timeline-text skill-item">
+              • Designing and developing IOS application according to specific requirements.
+            </li>
+            <li class="timeline-text skill-item">
+              • Solid understanding of the entire iOS development life cycle and Apple's design principles and interface
+              guidelines &
+            </li>
+            <li class="timeline-text skill-item">
+              • design using interface builder (Storyboards - Xib files - SwiftUI)
+            </li>
+            <li class="timeline-text skill-item">
+              • And development skills in Swift. and Familiarity with OOP, data structures, and Design Patterns.
+            </li>
+            <li class="timeline-text skill-item">
+              • Knowledge of design patterns with MVC & MVVM & delegate patterns. and Knowledge of code versioning tools
+              (Git-GitHub) &
+            </li>
+            <li class="timeline-text skill-item">
+              • third-party libraries and APIs and Postman; URL Session,Alamofire and Moya
+            </li>
+            <li class="timeline-text skill-item">
+              • Knowledge of push notifications and Firebase, WidgetKit, MapKit, CloudKit, CoreData, SwiftData, Core
+              Animation, Core Graphics, UnitTest, and Core Text,Realm
+            </li>
+
+            <li class="timeline-text skill-item">
+              • Knowledge of push notifications and Firebase, WidgetKit, MapKit, CloudKit, CoreData, SwiftData, Core
+              Animation, Core
+            </li>
+
+
+            <li class="timeline-text skill-item">
+              • Knowledge of Social Media Login, Universal Link, Deep Link, Online Payment
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+
+        <section class="contact-form">
+
+          <div class="sidebar-info_more content-card">
+
+
+
+            <ul class="contacts-list">
+
+              <li class="contact-item">
+
+
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+
+                  <a href="mailto:asemelkhouli209@gmail.com" class="contact-link">asemelkhouli209@gmail.com</a>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+
+                  <a href="mailto:asemelkhouli209@gmail.com" class="contact-link">asemelkhouli209@gmail.com</a>
+                </div>
+
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Phone</p>
+
+                  <a href="tel:+201069934104" class="contact-link">+20 106 99 34 104</a>
+                </div>
+
+              </li>
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+              <li class="social-item">
+                <a href="https://github.com/asemelkhouli20" class="social-link" target="blank">
+                  <ion-icon name="logo-Github"></ion-icon>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="https://www.linkedin.com/in/asem-elkhouli" class="social-link" target="blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://api.whatsapp.com/send/?phone=%2B201069934104&text&app_absent=0" class="social-link"
+                  target="blank">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </section>
+
+      </article>
+
     </div>
-    </section>
-    <section class="about" id="about">
-        <h2 class="title">About me</h2>
 
-        <div class="contant">
-            
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="info">
-                    <h3>Education</h3>
-                    <p>Bachelor's degree in Computer Science · Mansoura University · (2017 - 2021)</p>
-                </div>
-            </div>
+  </main>
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Courses</h3>
-                    <p>Udemy - The Complete iOS App Development Bootcamp<br>developer.apple.ios-Human Interface Guidelines<br>Sean Allen - Dub Dub Grub</p>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <div class="info">
-                    <h3>Courses From YouTube</h3>
-                    <p>CodeWithChris-Core Data Tutorial · Mark Moeykens-Itinerary App Course · Codezilla-Object Oriented Programming</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-toolbox"></i>
-                </div>
-                <div class="info">
-                    <h3>Tools</h3>
-                    <p>Swift · SwiftUI · UIKit · Xcode · Sketch · Git · GitHub · CoreData · APIs · JSON · Cocoa Touch · Swift packages · MVC pattern · MVVM pattern · FireBase</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="PORTFOLIO" id="PORTFOLIO">
-        <h2 class="title">PORTFOLIO</h2>
-        <div class="contant">
-            <div class="project-card">
-                <div class="project-image">
-                <a target="blank" href="https://github.com/asemelkhouli20/Itinerary_App">
-                    <img src="image/Itinerary.png">
-                </a>
-                </div>
-                <div class="project-info">
-                    <h3>Itinerary App</h3>
-                </div>
 
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                <a target="blank" href="https://github.com/asemelkhouli20/RecipeSavedALL">
-                    <img src="image/Group.png">
-                </a>
-                </div>
-                <div class="project-info">
-                    <h3>RecipeSaved App</h3>
-                </div>
 
-            </div>
-             <div class="project-card">
-                <div class="project-image">
-                <a target="blank" href="https://youtu.be/WkCl4IIwfeg">
-                    <img src="image/sssa.png">
-                </a>
-                </div>
-                <div class="project-info">
-                    <h3>AYEN (almost published)</h3>
-                </div>
 
-            </div>
-             <div class="project-card">
-                <div class="project-image">
-                <a target="blank" href="https://youtu.be/MeArsQlocdM">
-                    <img src="image/logoTabark.png">
-                </a>
-                </div>
-                <div class="project-info">
-                    <h3>TABARK (almost published)</h3>
-                </div>
 
-            </div>
-             <div class="project-card">
-                <div class="project-image">
-                <a target="blank" href="https://youtu.be/31evOD8LQ2c">
-                    <img src="image/logo1.png">
-                </a>
-                </div>
-                <div class="project-info">
-                    <h3>Sahala (almost published)</h3>
-                </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-            </div>
-             <div class="project-card">
-                <div class="project-image">
-                <a target="blank" href="https://youtu.be/cMvudi7xXVk">
-                    <img src="image/1024.png">
-                </a>
-                </div>
-                <div class="project-info">
-                    <h3>MOWATER (In Test)</h3>
-                </div>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-            </div>
-        </div>
-    </section>
-    <section class="Contact" id="Contact">
-        <h2 class="title">Let's work together</h2>
-
-        <div class="contant">
-            
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>asemelkhouli209@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone-alt"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+20 106 9934 104</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <p>Copyrights @<span>ASEM ELKHOULI</span></p>
-        <div class="social-icons">
-            <a target="blank"href="https://www.linkedin.com/in/asem-elkhouli/"><i class="fab fa-linkedin"></i></a>
-            <a target="blank"href="https://github.com/asemelkhouli20"><i class="fab fa-github"></i></a>
-            <a target="blank"href="https://api.whatsapp.com/send/?phone=%2B201013171708&text&app_absent=0"><i class="fab fa-whatsapp"></i></a>
-            <a href="#Contact"><i class="far fa-id-card"></i></i></a>
-        </div>
-    </footer>
 </body>
+
 </html>
