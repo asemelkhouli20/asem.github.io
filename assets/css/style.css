@@ -147,6 +147,15 @@ textarea {
   background: none;
   font: inherit;
 }
+.download {
+  border-radius: 20px;
+  text-align: center;
+  background-color: goldenrod;
+  width: 300px;
+  padding: 20px;
+  margin: 50px;
+  color: black;
+}
 
 ::selection {
   background: var(--orange-yellow-crayola);
